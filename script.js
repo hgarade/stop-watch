@@ -7,15 +7,15 @@ var appendHours = document.getElementById("hr");
 var appendMinutes = document.getElementById("min");
 var appendSeconds = document.getElementById("seconds");
 var appendMilliSeconds = document.getElementById("milli");
-var buttonStart = document.getElementById("start");
 
+var buttonStart = document.getElementById("start");
 var buttonStop = document.getElementById("stop");
 var buttonReset = document.getElementById("reset");
 var Interval;
 
 buttonStart.onclick = function () {
   clearInterval(Interval);
-  Interval = setInterval(startTimer, 1);
+  Interval = setInterval(startTimer, 10);
 };
 
 buttonStop.onclick = function () {
